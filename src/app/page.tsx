@@ -29,22 +29,22 @@ export default function Home() {
           <h1>Fature até 800 mil ao ano!</h1>
           <p>Comece sua franquia agora</p>
           <Link href="/" className="flex">
-            <p className="bg-[#FEDA00] text-black text-sm font-bold px-3 py-2 mt-6">
+            <p className="bg-[#FEDA00] text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl">
               Quero faturar
             </p>
           </Link>
         </div>
       </div>
-      <div className="px-4 space-y-5 py-10">
-        <h1>Nossa História</h1>
-        <p>
+      <div className="px-4 py-10">
+        <h1 className="pb-5">Nossa História</h1>
+        <p className="text-lg font-light">
           A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De Angelino,
           em Barretos,São Paulo.Inicialmente, o restaurante atendia a pacientes
           e familiares próximos a um hospital oncológico, oferecendo refeições
           rápidas e acolhedoras
         </p>
-        <img src="/logo2.png" alt="Logo" />
-        <p>
+        <img src="/logo2.png" alt="Logo" className="py-10" />
+        <p className="text-lg font-light">
           Com a ajuda de sua mãe, Maria Aparecida Damaceno, o cardápio se
           expandiu para incluir exclusivos. O sucesso levou a Bitis Food Pizza a
           adotar o modelo de franquia após 8 anos de experiência no setor
@@ -70,27 +70,34 @@ export default function Home() {
           ))}
         </div>
         <Link href="/" className="flex items-center justify-center">
-          <p className="bg-[#F37832] text-white text-sm font-bold px-3 py-2 mt-6">
+          <p className="bg-[#F37832] text-white font-bold px-3 py-2 mt-6 rounded-xl">
             Ver todos
           </p>
         </Link>
       </div>
+      <div className="px-4 py-10">
+        <h1>Diferenciais</h1>
+        <ul className="list-disc list-inside pt-6 pb-8 text-lg font-light">
+          <li>Variedade no cardápio</li>
+          <li>Ampla expertise no segmento de alimentação</li>
+          <li>Software operacional e gerencial</li>
+          <li>Metodologia de trabal ho padronizada</li>
+          <li>Apoio para a escolha do ponto comercia</li>
+          <li>
+            Capacitação contínua para o Franqueado e sua equipe de funcionários
+          </li>
+          <li>Investimento em marketing para fixação e divulgação da marca</li>
+          <li>Orientação sobre a gestão da Unidade Franqueada</li>
+          <li>Suporte em diversas áreas do negócio</li>
+        </ul>
+        <img src="/local3.jpeg" alt="" className="mb-12 rounded-xl" />
+        <Link href="/" className="flex items-center justify-center">
+          <p className="bg-[#D80707] text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl">
+            Quero começar a faturar
+          </p>
+        </Link>
+      </div>
 
-      <h1>Diferenciais</h1>
-      <ul>
-        <li>Variedade no cardápio</li>
-        <li>Ampla expertise no segmento de alimentação</li>
-        <li>Software operacional e gerencial</li>
-        <li>Metodologia de trabal ho padronizada</li>
-        <li>Apoio para a escolha do ponto comercia</li>
-        <li>
-          Capacitação contínua para o Franqueado e sua equipe de funcionários{" "}
-        </li>
-        <li>Investimento em marketing para fixação e divulgação da marca</li>
-        <li>Orientação sobre a gestão da Unidade Franqueada</li>
-        <li>Suporte em diversas áreas do negócio</li>
-      </ul>
-      <Link href="/">Quero começar a faturar</Link>
       <Footer />
     </main>
   );
