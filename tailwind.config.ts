@@ -8,6 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        primary: "#ECBE21",
+        primary2: "#FEDA00",
+        secondary: "#D80707",
+        tertiary: "#F37832",
+      },
+      padding: {
+        mobile: "16px",
+        tablet: "32px",
+        desktop: "64px",
+      },
+      screens: {
+        mobile: "320px",
+        tablet: "768px",
+        desktop: "1024px",
+        greatDesktop: "1536px",
+      },
+      fontFamily: {
+        title: ["dienstag", "sans-serif"],
+        body: ["poppins", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

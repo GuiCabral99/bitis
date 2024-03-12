@@ -33,5 +33,17 @@ body {
 } */
 
 h1 {
-  @apply text-3xl font-black;
+  @apply text-3xl font-black font-title;
+}
+
+h2 {
+  @apply text-xl font-black font-title;
+}
+
+p {
+  @apply text-base font-normal font-body;
+}
+
+li {
+  @apply text-lg font-light font-body;
 }

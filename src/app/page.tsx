@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import BitisHeader from "./components/BitisHeader";
 
 export default function Home() {
   const [sliderCount, setSliderCount] = useState<number>(0);
@@ -24,18 +25,19 @@ export default function Home() {
   }, []);
   return (
     <main className="min-h-screen">
+      <BitisHeader />
       <div className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
-        <div className="bg-[#D8070780] space-y-6 py-10 px-4">
+        <div className="bg-[#D8070780] space-y-6 py-10 px-mobile">
           <h1>Fature até 800 mil ao ano!</h1>
           <p>Comece sua franquia agora</p>
           <Link href="/" className="flex">
-            <p className="bg-[#FEDA00] text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl">
+            <p className="bg-primary2 text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl">
               Quero faturar
             </p>
           </Link>
         </div>
       </div>
-      <div className="px-4 py-10">
+      <div className="px-mobile py-10">
         <h1 className="pb-5">Nossa História</h1>
         <p className="text-lg font-light">
           A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De Angelino,
@@ -70,12 +72,12 @@ export default function Home() {
           ))}
         </div>
         <Link href="/" className="flex items-center justify-center">
-          <p className="bg-[#F37832] text-white font-bold px-3 py-2 mt-6 rounded-xl">
+          <p className="bg-tertiary text-white font-bold px-3 py-2 mt-6 rounded-xl">
             Ver todos
           </p>
         </Link>
       </div>
-      <div className="px-4 py-10">
+      <div className="px-mobile py-10">
         <h1>Diferenciais</h1>
         <ul className="list-disc list-inside pt-6 pb-8 text-lg font-light">
           <li>Variedade no cardápio</li>
@@ -92,7 +94,7 @@ export default function Home() {
         </ul>
         <img src="/local3.jpeg" alt="" className="mb-12 rounded-xl" />
         <Link href="/" className="flex items-center justify-center">
-          <p className="bg-[#D80707] text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl">
+          <p className="bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl">
             Quero começar a faturar
           </p>
         </Link>
