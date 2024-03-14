@@ -1,9 +1,9 @@
 "use client";
 
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import BitisHeader from "./components/BitisHeader";
 
 export default function Home() {
   const [sliderCount, setSliderCount] = useState<number>(0);
@@ -25,27 +25,34 @@ export default function Home() {
   }, []);
   return (
     <main className="min-h-screen">
-      <BitisHeader />
+      <Header />
       <div className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
         <div className="bg-[#D8070780] space-y-6 py-10 px-mobile">
-          <h1>Fature até 800 mil ao ano!</h1>
-          <p>Comece sua franquia agora</p>
-          <Link href="/" className="flex">
-            <p className="bg-primary2 text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl">
-              Quero faturar
-            </p>
+          <h1 className="md:text-5xl">Fature até 800 mil ao ano!</h1>
+          <p className="text-lg font-light md:text-3xl">
+            Comece sua franquia agora
+          </p>
+          <Link
+            href="/"
+            className="inline-block bg-primary2 text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl md:text-3xl md:px-8 md:py-4"
+          >
+            Quero faturar
           </Link>
         </div>
       </div>
-      <div className="px-mobile py-10">
-        <h1 className="pb-5">Nossa História</h1>
-        <p className="text-lg font-light">
-          A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De Angelino,
-          em Barretos,São Paulo.Inicialmente, o restaurante atendia a pacientes
-          e familiares próximos a um hospital oncológico, oferecendo refeições
-          rápidas e acolhedoras
-        </p>
-        <img src="/logo2.png" alt="Logo" className="py-10" />
+      <div className="px-mobile py-10 md:px-tablet">
+        <div className="md:flex md:space-x-20 items-center">
+          <div>
+            <h1 className="pb-5">Nossa História</h1>
+            <p className="text-lg font-light md:max-w-80">
+              A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De
+              Angelino, em Barretos,São Paulo.Inicialmente, o restaurante
+              atendia a pacientes e familiares próximos a um hospital
+              oncológico, oferecendo refeições rápidas e acolhedoras
+            </p>
+          </div>
+          <img src="/logo2.png" alt="Logo" className="py-10 md:w-52" />
+        </div>
         <p className="text-lg font-light">
           Com a ajuda de sua mãe, Maria Aparecida Damaceno, o cardápio se
           expandiu para incluir exclusivos. O sucesso levou a Bitis Food Pizza a
@@ -55,18 +62,19 @@ export default function Home() {
           de Franquias Bitis Food Pizza!
         </p>
       </div>
-      <div className="bg-[url('/restaurant.jpg')] text-white space-y-8 py-20">
+      <div className="bg-[url('/restaurant.jpg')] text-white space-y-8 py-20 md:flex md:flex-col md:items-center">
         <h1 className="text-center">Pratos Disponíveis</h1>
-        <div className={`flex overflow-x-hidden `}>
+
+        <div className={`flex overflow-x-hidden`}>
           {slider.map((item, index: number) => (
             <div
               key={index}
-              className="min-w-full transition-all duration-1000 flex flex-col items-center space-y-4 p-4"
+              className="min-w-full transition-all duration-1000 flex flex-col items-center space-y-4"
               style={{
                 transform: `translateX(-${100 * sliderCount}%)`,
               }}
             >
-              <img src={item.img} className="rounded-full" />
+              <img src={item.img} className="rounded-full p-4 md:w-[400px]" />
               <p>{item.description}</p>
             </div>
           ))}
@@ -77,26 +85,40 @@ export default function Home() {
           </p>
         </Link>
       </div>
-      <div className="px-mobile py-10">
+      <div className="px-mobile py-10 md:px-tablet md:py-20">
         <h1>Diferenciais</h1>
-        <ul className="list-disc list-inside pt-6 pb-8 text-lg font-light">
-          <li>Variedade no cardápio</li>
-          <li>Ampla expertise no segmento de alimentação</li>
-          <li>Software operacional e gerencial</li>
-          <li>Metodologia de trabal ho padronizada</li>
-          <li>Apoio para a escolha do ponto comercia</li>
-          <li>
-            Capacitação contínua para o Franqueado e sua equipe de funcionários
-          </li>
-          <li>Investimento em marketing para fixação e divulgação da marca</li>
-          <li>Orientação sobre a gestão da Unidade Franqueada</li>
-          <li>Suporte em diversas áreas do negócio</li>
-        </ul>
-        <img src="/local3.jpeg" alt="" className="mb-12 rounded-xl" />
-        <Link href="/" className="flex items-center justify-center">
-          <p className="bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl">
-            Quero começar a faturar
-          </p>
+        <div className="md:flex md:space-x-16">
+          <ul className="list-disc list-inside pt-6 pb-8">
+            <li>Variedade no cardápio</li>
+            <li>Ampla expertise no segmento de alimentação</li>
+            <li>Software operacional e gerencial</li>
+            <li>Metodologia de trabal ho padronizada</li>
+            <li>Apoio para a escolha do ponto comercia</li>
+            <li>
+              Capacitação contínua para o Franqueado e sua equipe de
+              funcionários
+            </li>
+            <li>
+              Investimento em marketing para fixação e divulgação da marca
+            </li>
+            <li>Orientação sobre a gestão da Unidade Franqueada</li>
+            <li>Suporte em diversas áreas do negócio</li>
+          </ul>
+          <div className="w-[500px]">
+            <img src="/local3.jpeg" alt="" className="mb-12 rounded-xl" />
+            <img
+              src="/local3.jpeg"
+              alt=""
+              className="mb-12 rounded-xl hidden md:block"
+            />
+          </div>
+        </div>
+
+        <Link
+          href="/"
+          className="flex w-fit mx-auto bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl"
+        >
+          Quero começar a faturar
         </Link>
       </div>
 
