@@ -40,6 +40,10 @@ h2 {
   @apply text-xl font-black font-title;
 }
 
+h3 {
+  @apply text-lg font-black;
+}
+
 p {
   @apply text-base font-normal font-body;
 }

@@ -1,7 +1,5 @@
 "use client";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -25,7 +23,6 @@ export default function Home() {
   }, []);
   return (
     <main className="min-h-screen">
-      <Header />
       <div className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
         <div className="bg-[#D8070780] space-y-6 py-10 px-mobile lg:py-36 lg:space-y-9">
           <h1 className="md:text-5xl">Fature até 800 mil ao ano!</h1>
@@ -140,8 +137,6 @@ export default function Home() {
           Quero começar a faturar
         </Link>
       </div>
-
-      <Footer />
     </main>
   );
 }
