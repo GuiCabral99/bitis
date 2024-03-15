@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap">
+        <div className="hidden lg:flex lg:flex-wrap">
           {slider.map((item, index) => (
             <div key={index} className="w-1/3 p-4 space-y-4 ">
               <img src={item.img} alt="" />
@@ -94,7 +94,7 @@ export default function Home() {
       </div>
       <div className="px-mobile py-10 md:px-tablet md:py-20">
         <h1>Diferenciais</h1>
-        <div className="md:flex md:space-x-16 lg:flex-col lg:space-x-0">
+        <div className="lg:space-x-0">
           <ul className="list-disc list-inside pt-6 pb-8">
             <li>Variedade no cardápio</li>
             <li>Ampla expertise no segmento de alimentação</li>
@@ -111,16 +111,16 @@ export default function Home() {
             <li>Orientação sobre a gestão da Unidade Franqueada</li>
             <li>Suporte em diversas áreas do negócio</li>
           </ul>
-          <div className="w-[500px] lg:w-full lg:flex lg:justify-center lg:space-x-4">
+          <div className="md:w-full md:flex md:justify-center md:space-x-4">
             <img
               src="/local3.jpeg"
               alt=""
-              className="mb-12 rounded-xl lg:mb-0 lg:w-72"
+              className="rounded-xl md:w-1/2 lg:w-72"
             />
             <img
               src="/local3.jpeg"
               alt=""
-              className="rounded-xl hidden md:block lg:w-72"
+              className="rounded-xl hidden md:block md:w-1/2 lg:w-72"
             />
             <img
               src="/local3.jpeg"
