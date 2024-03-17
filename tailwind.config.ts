@@ -8,10 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        primary: "#ECBE21",
+        primary2: "#FEDA00",
+        secondary: "#D80707",
+        secondaryHover: "#b30707",
+        secondary99: "#D8070799",
+        tertiary: "#F37832",
+      },
       backgroundColor: {
         primary: "#ECBE21",
         primary2: "#FEDA00",
         secondary: "#D80707",
+        secondaryHover: "#b30707",
+        secondary99: "#D8070799",
         tertiary: "#F37832",
       },
       padding: {
@@ -20,6 +30,7 @@ const config: Config = {
         desktop: "64px",
       },
       screens: {
+        image: "1100px",
         mobile: "320px",
         tablet: "768px",
         desktop: "1024px",
