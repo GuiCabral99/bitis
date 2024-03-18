@@ -37,22 +37,23 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="px-mobile py-10 md:px-tablet">
-        <div className="md:flex items-center">
-          <div>
-            <h1 className="pb-5">Nossa História</h1>
-            <p className="text-lg font-light md:max-w-80 lg:max-w-[420px]">
-              A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De
-              Angelino, em Barretos,São Paulo.Inicialmente, o restaurante
-              atendia a pacientes e familiares próximos a um hospital
-              oncológico, oferecendo refeições rápidas e acolhedoras
-            </p>
-          </div>
-          <div className="md:w-1/2 md:flex md:items-center md:justify-center">
-            <img src="/logo2.png" alt="Logo" className="py-10 md:w-52" />
-          </div>
+
+      <section className="px-mobile py-10 space-y-10 md:space-y-0 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-16 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-0">
+        <div className="space-y-5 md:my-auto md:col-span-1 lg:max-w-[420px] 2xl:max-w-none 2xl:col-span-2 2xl:row-span-1">
+          <h1>Nossa História</h1>
+          <p className="text-lg font-light">
+            A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De
+            Angelino, em Barretos,São Paulo.Inicialmente, o restaurante atendia
+            a pacientes e familiares próximos a um hospital oncológico,
+            oferecendo refeições rápidas e acolhedoras
+          </p>
         </div>
-        <p className="text-lg font-light">
+        <img
+          src="/logo2.png"
+          alt="Logo"
+          className="max-w-80 m-auto md:col-span-1 md:w-52 2xl:col-span-1 2xl:row-span-2"
+        />
+        <p className="text-lg font-light md:col-span-2 2xl:col-span-2 2xl:row-span-2 2xl:flex 2xl:items-end">
           Com a ajuda de sua mãe, Maria Aparecida Damaceno, o cardápio se
           expandiu para incluir exclusivos. O sucesso levou a Bitis Food Pizza a
           adotar o modelo de franquia após 8 anos de experiência no setor
@@ -60,10 +61,10 @@ export default function Home() {
           simples, rentável e em crescimento, considere a oportunidade na Rede
           de Franquias Bitis Food Pizza!
         </p>
-      </div>
-      <div className="bg-[url('/restaurant.jpg')] text-white space-y-8 py-20 md:flex md:flex-col md:items-center">
-        <h1 className="text-center">Pratos Disponíveis</h1>
+      </section>
 
+      <section className="bg-[url('/restaurant.jpg')] text-white space-y-8 py-20 md:flex md:flex-col md:items-center">
+        <h1 className="text-center">Pratos Disponíveis</h1>
         <div className={`flex overflow-x-hidden lg:hidden`}>
           {slider.map((item, index: number) => (
             <div
@@ -91,8 +92,9 @@ export default function Home() {
             Ver todos
           </p>
         </Link>
-      </div>
-      <div className="px-mobile py-10 md:px-tablet md:py-20">
+      </section>
+
+      <section className="px-mobile py-10 md:px-tablet md:py-20">
         <h1>Diferenciais</h1>
         <div className="lg:space-x-0">
           <ul className="list-disc list-inside pt-6 pb-8">
@@ -136,7 +138,7 @@ export default function Home() {
         >
           Quero começar a faturar
         </Link>
-      </div>
+      </section>
     </main>
   );
 }
