@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -139,6 +140,7 @@ export default function Home() {
           Quero começar a faturar
         </Link>
       </section>
+      <Footer />
     </main>
   );
 }

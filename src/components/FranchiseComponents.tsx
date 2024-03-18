@@ -15,11 +15,15 @@ export function StartPlanCard() {
         </div>
         <div className="bg-[url('/delivery3.jpeg')] h-52 bg-cover bg-center min-w-full text-white my-4" />
         <div className="p-6 space-y-8 desktop:pb-0 pb-12 text-black">
-          <li className="font-semibold">Ponto de comércio com 80m²</li>
-          <li className="font-semibold">Fature em média R$ 68 mil ao mês</li>
-          <li className="font-semibold">Investimento R$ 220.000,00</li>
-          <li className="font-semibold">Payback em 27 meses</li>
-          <li className="font-semibold">Margem liquida média 18%</li>
+          <li className="font-semibold">Ponto de comercio com 60m²</li>
+          <li className="font-semibold">Fature em média R$ 50 mil ao mês</li>
+          <div>
+            <li className="font-semibold">Investimento R$ 175.000,00</li>
+            <p className="ml-6 font-light">+ Capital de giro indicado</p>
+          </div>
+          <li className="font-semibold">Payback em 32 meses</li>
+          <li className="font-semibold">Margem liquida média 16%</li>
+          <li className="font-semibold">Somente delivery</li>
         </div>
       </div>
     </Link>
@@ -33,7 +37,7 @@ export function FullPlanCard() {
       className="flex justify-center desktop:hover:scale-105 duration-300"
     >
       <div className="bg-secondary m-4 mt-12 w-[400px] flex flex-col justify-center items-center rounded-2xl">
-        <div className="bg-black h-10 mb-[720px] rounded-full p-4 absolute flex justify-center items-center">
+        <div className="bg-black h-10 -mt-5 rounded-full p-4 flex justify-center items-center">
           <p className="text-white">Recomendado</p>
         </div>
         <div className="flex flex-col p-mobile items-center mt-6 text-white">
@@ -50,8 +54,9 @@ export function FullPlanCard() {
           </div>
           <li className="font-semibold">Payback em 27 meses</li>
           <li className="font-semibold">Margem liquida média 18%</li>
+          <li className="font-semibold">Atendimento local e delivery</li>
         </div>
-        <div className="bg-black h-10 mt-[720px] w-20 rounded-full p-4 absolute flex justify-center items-center">
+        <div className="bg-black h-10 -mb-5 w-20 rounded-full p-4 flex justify-center items-center">
           <IoStar color="white" size={24} />
         </div>
       </div>
@@ -107,7 +112,7 @@ export function FranchiseSection1() {
     <div className="p-mobile tablet:p-tablet desktop:p-desktop">
       <h1
         className="text-xl font-black tablet:text-2xl
-        desktop:hidden w-[400px] mt-6"
+        desktop:hidden max-w-[400px] mt-6"
       >
         Escolha um plano abaixo e siga o passo a passo:
       </h1>
