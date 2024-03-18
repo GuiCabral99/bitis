@@ -192,7 +192,7 @@ export default function Home() {
 
       <section className="px-mobile py-10 md:px-tablet md:py-20 lg:px-0 lg:w-[896px] lg:mx-auto">
         <h1>Diferenciais</h1>
-        <div className="pt-6 pb-8 desktop:pb-16">
+        <div className="pt-6 pb-8 desktop:pb-16 desktop:space-y-4">
           <li>Variedade no cardápio</li>
           <li>Ampla expertise no segmento de alimentação</li>
           <li>Software operacional e gerencial</li>
