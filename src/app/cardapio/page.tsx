@@ -1,4 +1,5 @@
 import DishesCard from "@/components/DishesCard";
+import Footer from "@/components/Footer";
 
 export default () => {
   const dishes = [
@@ -92,6 +93,7 @@ export default () => {
           </div>
         ))}
       </div>
+      <Footer />
     </main>
   );
 };

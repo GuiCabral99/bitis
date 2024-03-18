@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import {
   FranchiseHeader,
   FranchiseSection1,
@@ -16,6 +17,7 @@ export default () => {
       <FranchiseSection2 />
       <FranchiseSectionTitle3 />
       <FranchiseSection3 />
+      <Footer />
     </main>
   );
 };

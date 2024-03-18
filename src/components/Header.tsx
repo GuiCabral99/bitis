@@ -13,7 +13,7 @@ export default () => {
   return (
     <>
       <Sidebar isOpen={tappedSidebar} setIsOpen={setTappedSidebar} />
-      <div className="bg-primary h-20 z-10 w-full flex items-center justify-between lg:justify-center px-mobile tablet:px-tablet desktop:px-desktop fixed font-title text-black">
+      <div className="bg-primary shadow-md h-20 z-10 w-full flex items-center justify-between lg:justify-center px-mobile tablet:px-tablet desktop:px-desktop fixed font-title text-black">
         <div className="hidden desktop:flex flex-1 space-x-8 text-black items-center">
           <Link href="/">
             <h2 className="hover:text-secondaryHover duration-75 hover:scale-110">
@@ -37,13 +37,16 @@ export default () => {
           </div>
         </Link>
         <div className="hidden flex-1 desktop:flex justify-end items-center space-x-8">
-          <Link href="#">
+          <Link href="#" target="_blank">
             <IoLogoWhatsapp className="size-7 hover:text-secondaryHover duration-75 hover:scale-110" />
           </Link>
-          <Link href="https://www.facebook.com/bitisfoodpizza">
+          <Link href="https://www.facebook.com/bitisfoodpizza" target="_blank">
             <FaFacebookF className="size-7 hover:text-secondaryHover duration-75 hover:scale-110" />
           </Link>
-          <Link href="https://www.instagram.com/bitisfoodpizza/">
+          <Link
+            href="https://www.instagram.com/bitisfoodpizza/"
+            target="_blank"
+          >
             <IoLogoInstagram className="size-7 hover:text-secondaryHover duration-75 hover:scale-110" />
           </Link>
           <Link href="/contato">
