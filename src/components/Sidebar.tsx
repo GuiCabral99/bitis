@@ -1,10 +1,8 @@
 import Link from "next/link";
-import { useState } from "react";
 import { FaFacebookF } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdContact } from "react-icons/io";
 import {
-  IoClose,
   IoCloseCircle,
   IoHome,
   IoLogoInstagram,
@@ -16,7 +14,7 @@ export default (props: { isOpen: boolean; setIsOpen: any }) => {
   return (
     <div className="absolute desktop:hidden">
       <div
-        className={`fixed top-0 right-0 h-full w-full z-50 transition-transform duration-100 flex ${
+        className={`bg-[#00000080] fixed top-0 right-0 h-full w-full z-50 transition-transform duration-0 flex ${
           props.isOpen
             ? "transform translate-x-0"
             : "transform translate-x-full"
@@ -24,7 +22,7 @@ export default (props: { isOpen: boolean; setIsOpen: any }) => {
       >
         <button
           onClick={() => props.setIsOpen(false)}
-          className="h-full w-1/2 bg-[#00000050]"
+          className="h-full w-1/2 bg-transparent"
         />
         <div className="h-full w-2/3 bg-white">
           <button
