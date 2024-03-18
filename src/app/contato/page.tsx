@@ -1,10 +1,18 @@
+"use client";
+
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Link from "next/link";
+import { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 
 export default () => {
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    contactNumber: "",
+    message: "",
+  });
   return (
     <>
       <div className="bg-zinc-100">
@@ -53,6 +61,8 @@ export default () => {
               <input
                 type="text"
                 className="border-black border rounded-2xl w-full p-mobile"
+                value={inputs.name}
+                onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
               />
             </div>
             <div className="flex flex-col space-y-2">
@@ -60,6 +70,10 @@ export default () => {
               <input
                 type="text"
                 className="border-black border rounded-2xl w-full p-mobile"
+                value={inputs.email}
+                onChange={(e) =>
+                  setInputs({ ...inputs, email: e.target.value })
+                }
               />
             </div>
             <div className="flex flex-col space-y-2">
@@ -67,6 +81,10 @@ export default () => {
               <input
                 type="text"
                 className="border-black border rounded-2xl w-full p-mobile"
+                value={inputs.contactNumber}
+                onChange={(e) =>
+                  setInputs({ ...inputs, contactNumber: e.target.value })
+                }
               />
             </div>
             <div className="flex flex-col space-y-2">
@@ -74,9 +92,17 @@ export default () => {
               <textarea
                 rows={10}
                 className="border-black border rounded-2xl w-full p-mobile min-h-20 max-h-60"
+                value={inputs.message}
+                onChange={(e) =>
+                  setInputs({ ...inputs, message: e.target.value })
+                }
               />
             </div>
-            <Link href="https://google.com">
+            {/* 5517981733913 */}
+            <Link
+              target="_blank"
+              href={`https://wa.me/5517991295631?text=Nome: ${inputs.name}%0AEmail: ${inputs.email}%0ANúmero para contato: ${inputs.contactNumber}%0A%0A${inputs.message}`}
+            >
               <div className="bg-secondary py-4 px-20 rounded-xl hover:bg-secondaryHover hover:scale-100 duration-75 mt-8">
                 <h2 className="text-center text-white text-[19px]">Enviar</h2>
               </div>

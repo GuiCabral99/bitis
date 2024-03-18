@@ -34,14 +34,14 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <section className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
-        <div className="bg-[#D8070780] space-y-6 py-10 px-mobile md:px-tablet lg:py-36 lg:space-y-9 lg:px-desktop">
-          <h1 className="md:text-5xl">Fature até 800 mil ao ano!</h1>
+        <div className="bg-secondary99 space-y-6 py-16 px-mobile md:px-tablet lg:py-36 lg:space-y-9 lg:px-desktop">
+          <h1 className="md:text-3xl w-[340px]">Fature até 800 mil ao ano!</h1>
           <p className="text-lg font-light md:text-3xl">
             Comece sua franquia agora
           </p>
           <Link
             href="/franquia"
-            className="inline-block bg-primary2 text-black text-sm font-bold px-3 py-2 mt-6 rounded-xl md:text-3xl md:px-8 md:py-4"
+            className="inline-block bg-primary2 text-black text-sm font-bold px-6 py-2 mt-6 rounded-xl md:text-xl md:px-8 md:py-4 font-body hover:bg-primary hover:scale-105 duration-75"
           >
             Quero faturar
           </Link>
@@ -74,12 +74,15 @@ export default function Home() {
       </section>
 
       <section className="bg-[url('/costelinha.jpg')] bg-cover bg-center">
-        <div className="bg-black/60 text-white space-y-10 py-16">
+        <div className="bg-black/60 text-white space-y-20 py-16">
           <div className="lg:flex lg:justify-between lg:items-center lg:w-[812px] lg:mx-auto">
             <h1 className="text-center">Pratos Disponíveis</h1>
 
-            <Link href="/cardapio" className="hidden lg:block">
-              <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 px-8 rounded-lg text-center">
+            <Link
+              href="/cardapio"
+              className="hidden lg:block bg-tertiary rounded-lg hover:bg-tertiaryHover hover:scale-105 duration-75"
+            >
+              <p className="text-white font-bold w-full max-w-[304px] py-2 px-8 text-center">
                 Ver todos
               </p>
             </Link>
@@ -93,12 +96,12 @@ export default function Home() {
                   transform: `translateX(-${100 * sliderCountSm}%)`,
                 }}
               >
-                <div className="mx-auto max-w-[304px] space-y-2">
+                <div className="mx-auto max-w-[304px] space-y-0">
                   <img
                     src={item.img}
-                    className="rounded-full -mb-4 md:w-[400px]"
+                    className="rounded-full -mt-10 md:w-[400px]"
                   />
-                  <p className="text-2xl font-light -mt-4 text-center">
+                  <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
                 </div>
@@ -115,12 +118,12 @@ export default function Home() {
                   transform: `translateX(-${100 * sliderCountMd}%)`,
                 }}
               >
-                <div className="mx-auto max-w-[304px] space-y-2">
+                <div className="mx-auto max-w-[304px] space-y-0">
                   <img
                     src={item.img}
-                    className="rounded-full -mb-4 md:w-[400px]"
+                    className="rounded-full -mt-10 md:w-[400px]"
                   />
-                  <p className="text-2xl font-light -mt-4 text-center">
+                  <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
                 </div>
@@ -137,12 +140,12 @@ export default function Home() {
                   transform: `translateX(-${100 * sliderCountLg}%)`,
                 }}
               >
-                <div className="mx-auto max-w-[304px] space-y-2">
+                <div className="mx-auto max-w-[304px] space-y-0">
                   <img
                     src={item.img}
-                    className="rounded-full -mb-4 md:w-[400px]"
+                    className="rounded-full -mt-10 md:w-[400px]"
                   />
-                  <p className="text-2xl font-light -mt-4 text-center">
+                  <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
                 </div>
@@ -152,7 +155,7 @@ export default function Home() {
 
           <Link
             href="/cardapio"
-            className="flex items-center justify-center px-mobile lg:hidden"
+            className="flex items-center justify-center px-mobile lg:hidden pt-4"
           >
             <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 rounded-xl text-center">
               Ver todos
@@ -196,7 +199,7 @@ export default function Home() {
 
         <Link
           href="/franquia"
-          className="flex w-fit mx-auto bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl md:hidden"
+          className="flex w-fit mx-auto bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl md:hidden hover:bg-secondaryHover hover:scale-105 duration-75"
         >
           Quero começar a faturar
         </Link>

@@ -4,15 +4,18 @@ import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 export default () => {
   return (
     <footer className="space-y-10 py-6 md:space-y-20">
-      <div className="flex justify-center space-x-10 md:space-x-20">
-        <Link href="/">
-          <FaWhatsapp className="w-6 h-6 md:w-14 md:h-14" />
+      <div className="flex justify-center items-center space-x-10 md:space-x-20">
+        <Link
+          href="https://api.whatsapp.com/send?phone=5517981733913"
+          target="_blank"
+        >
+          <FaWhatsapp className="size-8 md:size-10 hover:text-secondaryHover hover:scale-110 duration-75" />
         </Link>
-        <Link href="/">
-          <FaFacebookF className="w-6 h-6 md:w-14 md:h-14" />
+        <Link href="https://www.facebook.com/bitisfoodpizza" target="_blank">
+          <FaFacebookF className="size-8 md:size-10 hover:text-secondaryHover hover:scale-110 duration-75" />
         </Link>
-        <Link href="/">
-          <FaInstagram className="w-6 h-6 md:w-14 md:h-14" />
+        <Link href="https://www.instagram.com/bitisfoodpizza/" target="_blank">
+          <FaInstagram className="size-8 md:size-10 hover:text-secondaryHover hover:scale-110 duration-75" />
         </Link>
       </div>
       <div className="text-sm font-light text-center md:text-xl">

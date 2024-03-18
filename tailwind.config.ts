@@ -23,6 +23,7 @@ const config: Config = {
         secondaryHover: "#b30707",
         secondary99: "#D8070799",
         tertiary: "#F37832",
+        tertiaryHover: "#E26D2A",
       },
       padding: {
         mobile: "16px",
