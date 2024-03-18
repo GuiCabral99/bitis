@@ -43,7 +43,7 @@ export default (props: { isOpen: boolean; setIsOpen: any }) => {
                 <IoHome size={34} />
               </div>
             </Link>
-            <Link onClick={() => props.setIsOpen(false)} href={"/"}>
+            <Link onClick={() => props.setIsOpen(false)} href={"/cardapio"}>
               <div className="flex justify-end items-center space-x-4">
                 <h2 className="text-center font-black tablet:text-2xl">
                   Cardápio

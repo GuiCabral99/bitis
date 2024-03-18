@@ -20,7 +20,7 @@ export default () => {
               Home
             </h2>
           </Link>
-          <Link href="#">
+          <Link href="/cardapio">
             <h2 className="hover:text-secondaryHover duration-75 hover:scale-110">
               Cardápio
             </h2>
@@ -37,7 +37,10 @@ export default () => {
           </div>
         </Link>
         <div className="hidden flex-1 desktop:flex justify-end items-center space-x-8">
-          <Link href="#" target="_blank">
+          <Link
+            href="https://api.whatsapp.com/send?phone=5517981733913"
+            target="_blank"
+          >
             <IoLogoWhatsapp className="size-7 hover:text-secondaryHover duration-75 hover:scale-110" />
           </Link>
           <Link href="https://www.facebook.com/bitisfoodpizza" target="_blank">

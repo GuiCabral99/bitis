@@ -73,90 +73,92 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="bg-[url('/restaurant.jpg')] text-white space-y-10 py-16">
-        <div className="lg:flex lg:justify-between lg:items-center lg:w-[812px] lg:mx-auto">
-          <h1 className="text-center">Pratos Disponíveis</h1>
+      <section className="bg-[url('/costelinha.jpg')]">
+        <div className="bg-black/60 text-white space-y-10 py-16">
+          <div className="lg:flex lg:justify-between lg:items-center lg:w-[812px] lg:mx-auto">
+            <h1 className="text-center">Pratos Disponíveis</h1>
 
-          <Link href="/cardapio" className="hidden lg:block">
-            <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 px-8 rounded-lg text-center">
+            <Link href="/cardapio" className="hidden lg:block">
+              <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 px-8 rounded-lg text-center">
+                Ver todos
+              </p>
+            </Link>
+          </div>
+          <div className={`flex overflow-x-hidden md:hidden`}>
+            {slider.map((item) => (
+              <div
+                key={item.id}
+                className="min-w-full transition-all duration-1000"
+                style={{
+                  transform: `translateX(-${100 * sliderCountSm}%)`,
+                }}
+              >
+                <div className="mx-auto max-w-[304px] space-y-2">
+                  <img
+                    src={item.img}
+                    className="rounded-full -mb-4 md:w-[400px]"
+                  />
+                  <p className="text-2xl font-light -mt-4 text-center">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className={`md:flex overflow-x-hidden hidden lg:hidden`}>
+            {slider.map((item) => (
+              <div
+                key={item.id}
+                className="min-w-[50%] transition-all duration-1000"
+                style={{
+                  transform: `translateX(-${100 * sliderCountMd}%)`,
+                }}
+              >
+                <div className="mx-auto max-w-[304px] space-y-2">
+                  <img
+                    src={item.img}
+                    className="rounded-full -mb-4 md:w-[400px]"
+                  />
+                  <p className="text-2xl font-light -mt-4 text-center">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className={`lg:flex overflow-x-hidden hidden`}>
+            {slider.map((item) => (
+              <div
+                key={item.id}
+                className="min-w-[33.333%] transition-all duration-1000"
+                style={{
+                  transform: `translateX(-${100 * sliderCountLg}%)`,
+                }}
+              >
+                <div className="mx-auto max-w-[304px] space-y-2">
+                  <img
+                    src={item.img}
+                    className="rounded-full -mb-4 md:w-[400px]"
+                  />
+                  <p className="text-2xl font-light -mt-4 text-center">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <Link
+            href="/cardapio"
+            className="flex items-center justify-center px-mobile lg:hidden"
+          >
+            <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 rounded-xl text-center">
               Ver todos
             </p>
           </Link>
         </div>
-        <div className={`flex overflow-x-hidden md:hidden`}>
-          {slider.map((item) => (
-            <div
-              key={item.id}
-              className="min-w-full transition-all duration-1000"
-              style={{
-                transform: `translateX(-${100 * sliderCountSm}%)`,
-              }}
-            >
-              <div className="mx-auto max-w-[304px] space-y-2">
-                <img
-                  src={item.img}
-                  className="rounded-full -mb-4 md:w-[400px]"
-                />
-                <p className="text-2xl font-light -mt-4 text-center">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className={`md:flex overflow-x-hidden hidden lg:hidden`}>
-          {slider.map((item) => (
-            <div
-              key={item.id}
-              className="min-w-[50%] transition-all duration-1000"
-              style={{
-                transform: `translateX(-${100 * sliderCountMd}%)`,
-              }}
-            >
-              <div className="mx-auto max-w-[304px] space-y-2">
-                <img
-                  src={item.img}
-                  className="rounded-full -mb-4 md:w-[400px]"
-                />
-                <p className="text-2xl font-light -mt-4 text-center">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className={`lg:flex overflow-x-hidden hidden`}>
-          {slider.map((item) => (
-            <div
-              key={item.id}
-              className="min-w-[33.333%] transition-all duration-1000"
-              style={{
-                transform: `translateX(-${100 * sliderCountLg}%)`,
-              }}
-            >
-              <div className="mx-auto max-w-[304px] space-y-2">
-                <img
-                  src={item.img}
-                  className="rounded-full -mb-4 md:w-[400px]"
-                />
-                <p className="text-2xl font-light -mt-4 text-center">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <Link
-          href="/cardapio"
-          className="flex items-center justify-center px-mobile lg:hidden"
-        >
-          <p className="bg-tertiary text-white font-bold w-full max-w-[304px] py-2 rounded-xl text-center">
-            Ver todos
-          </p>
-        </Link>
       </section>
 
       <section className="px-mobile py-10 md:px-tablet md:py-20 lg:px-0 lg:w-[896px] lg:mx-auto">
