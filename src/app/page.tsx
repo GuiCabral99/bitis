@@ -8,6 +8,7 @@ export default function Home() {
   const [sliderCountSm, setSliderCountSm] = useState<number>(0);
   const [sliderCountMd, setSliderCountMd] = useState<number>(0);
   const [sliderCountLg, setSliderCountLg] = useState<number>(0);
+  const [sliderCountXl, setSliderCountXl] = useState<number>(0);
   const slider = [
     { id: 0, img: "/burger.png", description: "Burgers" },
     { id: 1, img: "/pizza.png", description: "Pizzas" },
@@ -25,7 +26,10 @@ export default function Home() {
         sliderCountMd === slider.length - 2 ? 0 : sliderCountMd + 1
       );
       setSliderCountLg((sliderCountLg) =>
-        sliderCountLg === slider.length - 3 ? 0 : sliderCountLg + 1
+        sliderCountLg === slider.length - 4 ? 0 : sliderCountLg + 1
+      );
+      setSliderCountXl((sliderCountXl) =>
+        sliderCountXl === slider.length - 5 ? 0 : sliderCountXl + 1
       );
     }, 4000);
     return () => clearInterval(interval);
@@ -36,7 +40,7 @@ export default function Home() {
       <section className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
         <div className="bg-secondary99 space-y-6 py-16 px-mobile md:px-tablet lg:py-36 lg:space-y-9 lg:px-desktop">
           <h1 className="md:text-3xl w-[340px]">Fature até 800 mil ao ano!</h1>
-          <p className="text-lg font-light md:text-3xl">
+          <p className="text-lg font-light md:text-2xl">
             Comece sua franquia agora
           </p>
           <Link
@@ -48,8 +52,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-mobile py-10 space-y-10 md:space-y-0 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-16 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-0">
-        <div className="space-y-5 md:my-auto md:col-span-1 lg:max-w-[420px] 2xl:max-w-none 2xl:col-span-2 2xl:row-span-1">
+      <section className="px-mobile py-10 space-y-10 md:space-y-0 desktop:my-8 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-16 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-0">
+        <div className="space-y-10 md:my-auto md:col-span-1 lg:max-w-[420px] 2xl:max-w-none 2xl:col-span-2 2xl:row-span-1">
           <h1>Nossa História</h1>
           <p className="text-lg font-light">
             A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De
@@ -131,13 +135,35 @@ export default function Home() {
             ))}
           </div>
 
-          <div className={`lg:flex overflow-x-hidden hidden`}>
+          <div className={`lg:flex overflow-x-hidden hidden xl:hidden`}>
             {slider.map((item) => (
               <div
                 key={item.id}
-                className="min-w-[33.333%] transition-all duration-1000"
+                className="desktop:min-w-[25%] transition-all duration-1000"
                 style={{
                   transform: `translateX(-${100 * sliderCountLg}%)`,
+                }}
+              >
+                <div className="mx-auto max-w-[304px] space-y-0">
+                  <img
+                    src={item.img}
+                    className="rounded-full -mt-10 md:w-[400px]"
+                  />
+                  <p className="text-2xl font-light -mt-10 text-center">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className={`xl:flex overflow-x-hidden hidden`}>
+            {slider.map((item) => (
+              <div
+                key={item.id}
+                className="desktop:min-w-[20%] transition-all duration-1000"
+                style={{
+                  transform: `translateX(-${100 * sliderCountXl}%)`,
                 }}
               >
                 <div className="mx-auto max-w-[304px] space-y-0">
@@ -166,7 +192,7 @@ export default function Home() {
 
       <section className="px-mobile py-10 md:px-tablet md:py-20 lg:px-0 lg:w-[896px] lg:mx-auto">
         <h1>Diferenciais</h1>
-        <div className="pt-6 pb-8">
+        <div className="pt-6 pb-8 desktop:pb-16">
           <li>Variedade no cardápio</li>
           <li>Ampla expertise no segmento de alimentação</li>
           <li>Software operacional e gerencial</li>

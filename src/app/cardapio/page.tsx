@@ -56,7 +56,7 @@ export default () => {
   return (
     <main className="space-y-14">
       <div className="bg-[url('/menu.jpg')] bg-center bg-cover min-w-full">
-        <div className="bg-secondary99 text-white space-y-2 desktop:py-28 px-mobile">
+        <div className="bg-secondary99 text-white space-y-2 py-14 desktop:py-28 px-mobile">
           <h1 className="text-center">CARDÁPIO</h1>
         </div>
       </div>
