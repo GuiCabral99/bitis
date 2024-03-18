@@ -73,7 +73,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="bg-[url('/costelinha.jpg')]">
+      <section className="bg-[url('/costelinha.jpg')] bg-cover bg-center">
         <div className="bg-black/60 text-white space-y-10 py-16">
           <div className="lg:flex lg:justify-between lg:items-center lg:w-[812px] lg:mx-auto">
             <h1 className="text-center">Pratos Disponíveis</h1>
