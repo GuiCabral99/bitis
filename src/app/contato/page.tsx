@@ -98,10 +98,9 @@ export default () => {
                 }
               />
             </div>
-            {/* 5517981733913 */}
             <Link
               target="_blank"
-              href={`https://wa.me/5517991295631?text=Nome: ${inputs.name}%0AEmail: ${inputs.email}%0ANúmero para contato: ${inputs.contactNumber}%0A%0A${inputs.message}`}
+              href={`https://wa.me/5517981733913?text=Nome: ${inputs.name}%0AEmail: ${inputs.email}%0ANúmero para contato: ${inputs.contactNumber}%0A%0A${inputs.message}`}
             >
               <div className="bg-secondary py-4 px-20 rounded-xl hover:bg-secondaryHover hover:scale-100 duration-75 mt-8">
                 <h2 className="text-center text-white text-[19px]">Enviar</h2>
