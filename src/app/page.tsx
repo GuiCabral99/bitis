@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <section className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
-        <div className="bg-secondary99 space-y-6 py-16 px-mobile md:px-tablet lg:py-36 lg:space-y-9 lg:px-desktop">
+        <div className="bg-secondary99 space-y-6 py-16 px-mobile md:px-tablet lg:py-36 lg:space-y-9">
           <div className="desktop:space-y-12 space-y-8 max-w-[1100px] mx-auto">
             <h1 className="md:text-3xl desktop:text-4xl desktop:max-w-[400px] max-w-[340px]">
               Fature até 800 mil ao ano!
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-mobile py-10 space-y-10 md:space-y-0 desktop:my-8 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-0 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-4 max-w-[1100px] mx-auto items-center">
+      <section className="px-mobile py-10 space-y-10 md:space-y-0 desktop:my-8 tablet:px-tablet md:grid md:grid-cols-2 md:gap-y-10 2xl:px-0 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-4 max-w-[1100px] mx-auto items-center">
         <div className="space-y-10 md:my-auto md:col-span-1 2xl:col-span-2 2xl:row-span-1">
           <h1>Nossa História</h1>
           <p className="text-lg font-light">
