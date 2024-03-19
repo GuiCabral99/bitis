@@ -21,7 +21,12 @@ export default () => {
       <div className="text-sm font-light text-center md:text-xl">
         <h4>Bitis Food Pizza &copy; Todos os direitos reservados.</h4>
         <Link href="https://uxstudios.com.br" target="_blank">
-          Desenvolvido por UX Studios
+          <div className="flex justify-center items-center space-x-2">
+            <h4>Desenvolvido por</h4>
+            <h4 className="underline text-zinc-black hover:scale-105 duration-75 hover:text-zinc-600">
+              UX Studios
+            </h4>
+          </div>
         </Link>
       </div>
     </footer>

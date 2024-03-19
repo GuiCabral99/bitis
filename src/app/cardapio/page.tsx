@@ -61,14 +61,14 @@ export default () => {
         </div>
       </div>
       <section className="px-mobile space-y-4 md:space-y-8 lg:space-y-16 max-w-[1024px] mx-auto">
-        <h1 className="md:text-3xl">Os mais pedidos do iFood</h1>
+        <h1 className="md:text-3xl">Os mais pedidos do iFood!</h1>
         <h3 className="md:text-2xl font-body font-normal">
           Burgers e pizza estão entre os top 10 mais vendidos do iFood
         </h3>
         <h4 className="text-end text-sm font-light md:text-xl font-body">
           8,5 mil burguers por hora!
           <br />
-          70 milhões de pedidos por mes!
+          70 milhões de pedidos por mês!
         </h4>
       </section>
 
@@ -82,7 +82,7 @@ export default () => {
           </h1>
         </div>
 
-        <div className="px-mobile flex justify-center flex-wrap lg:max-w-[1000px] gap-4 lg:mx-auto py-10 md:py-20">
+        <div className="px-mobile flex justify-center flex-wrap lg:max-w-[1024px] gap-4 lg:mx-auto py-10 md:py-20 rounded-b-2xl">
           {dishes.map((item) => (
             <div key={item.id}>
               <DishesCard

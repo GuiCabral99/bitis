@@ -22,9 +22,9 @@ export default (props: { isOpen: boolean; setIsOpen: any }) => {
       >
         <button
           onClick={() => props.setIsOpen(false)}
-          className="h-full w-1/2 bg-transparent"
+          className="h-full w-[20%] bg-transparent"
         />
-        <div className="h-full w-2/3 bg-white">
+        <div className="h-full w-4/5 bg-white">
           <button
             onClick={() => props.setIsOpen(false)}
             className="fixed p-mobile tablet:p-tablet"

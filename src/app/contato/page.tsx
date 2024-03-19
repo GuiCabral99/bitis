@@ -22,7 +22,7 @@ export default () => {
               <div className="space-y-6 desktop:space-y-10 desktop:mt-6 flex flex-col justify-center items-center">
                 <div className="w-[250px]">
                   <h1 className="text-center text-white">
-                    Vem falar com a gente
+                    Vem falar com a gente!
                   </h1>
                 </div>
                 <div className="flex flex-col bg-white rounded-3xl w-full justify-center items-center p-tablet space-y-8 desktop:space-y-8">
@@ -39,7 +39,7 @@ export default () => {
                     href="https://www.google.com/maps/place/Villas+Pizza+Burguer/@-20.5775729,-48.5703008,17z/data=!3m1!4b1!4m6!3m5!1s0x94bb855061fe5f23:0x9e7202e561f71374!8m2!3d-20.5775729!4d-48.5677259!16s%2Fg%2F11cmzwrzlq?entry=ttu"
                   >
                     <div
-                      className="bg-primary2 py-2 px-20 rounded-xl hover:bg-primary
+                      className="bg-primary2 py-2 px-10 tablet:px-20 rounded-xl hover:bg-primary
                     hover:scale-105 duration-75"
                     >
                       <h2>Ver no mapa</h2>

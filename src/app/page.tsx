@@ -14,7 +14,7 @@ export default function Home() {
     { id: 1, img: "/pizza.png", description: "Pizzas" },
     { id: 2, img: "/batata.png", description: "Porções Quentes" },
     { id: 3, img: "/espeto.png", description: "Espetos" },
-    { id: 4, img: "/jantinha.png", description: "Jantinha" },
+    { id: 4, img: "/jantinha.png", description: "Jantinhas" },
     { id: 5, img: "/cumbuca.png", description: "Caldos" },
   ];
   useEffect(() => {
@@ -39,27 +39,31 @@ export default function Home() {
     <main className="min-h-screen">
       <section className="bg-[url('/pizza-bg.jpg')] bg-cover bg-center min-w-full text-white">
         <div className="bg-secondary99 space-y-6 py-16 px-mobile md:px-tablet lg:py-36 lg:space-y-9 lg:px-desktop">
-          <h1 className="md:text-3xl w-[340px]">Fature até 800 mil ao ano!</h1>
-          <p className="text-lg font-light md:text-2xl">
-            Comece sua franquia agora
-          </p>
-          <Link
-            href="/franquia"
-            className="inline-block bg-primary2 text-black text-sm font-bold px-6 py-2 mt-6 rounded-xl md:text-xl md:px-8 md:py-4 font-body hover:bg-primary hover:scale-105 duration-75"
-          >
-            Quero faturar
-          </Link>
+          <div className="desktop:space-y-12 space-y-8 max-w-[1100px] mx-auto">
+            <h1 className="md:text-3xl desktop:text-4xl desktop:max-w-[400px] max-w-[340px]">
+              Fature até 800 mil ao ano!
+            </h1>
+            <p className="text-lg font-light md:text-2xl">
+              Comece sua franquia agora
+            </p>
+            <Link
+              href="/franquia"
+              className="inline-block bg-primary2 text-black text-sm font-bold px-6 py-2 mt-6 rounded-xl md:text-xl md:px-8 md:py-4 font-body hover:bg-primary hover:scale-105 duration-75"
+            >
+              Quero faturar
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="px-mobile py-10 space-y-10 md:space-y-0 desktop:my-8 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-16 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-0">
-        <div className="space-y-10 md:my-auto md:col-span-1 lg:max-w-[420px] 2xl:max-w-none 2xl:col-span-2 2xl:row-span-1">
+      <section className="px-mobile py-10 space-y-10 md:space-y-0 desktop:my-8 md:px-tablet md:grid md:grid-cols-2 md:gap-y-10 lg:px-desktop 2xl:px-0 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-y-4 max-w-[1100px] mx-auto items-center">
+        <div className="space-y-10 md:my-auto md:col-span-1 2xl:col-span-2 2xl:row-span-1">
           <h1>Nossa História</h1>
           <p className="text-lg font-light">
             A Bitis Food Pizza foi fundada em 2015 por Roberson Luis De
-            Angelino, em Barretos,São Paulo.Inicialmente, o restaurante atendia
-            a pacientes e familiares próximos a um hospital oncológico,
-            oferecendo refeições rápidas e acolhedoras
+            Angelino, em Barretos, São Paulo. Inicialmente, o restaurante
+            atendia a pacientes e familiares próximos a um hospital oncológico,
+            oferecendo refeições rápidas e acolhedoras.
           </p>
         </div>
         <img
@@ -190,14 +194,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-mobile py-10 md:px-tablet md:py-20 lg:px-0 lg:w-[896px] lg:mx-auto">
+      <section className="px-mobile py-10 md:px-tablet md:py-20 lg:px-0 max-w-[1024px] mx-auto">
         <h1>Diferenciais</h1>
         <div className="pt-6 pb-8 desktop:pb-16 desktop:space-y-4">
           <li>Variedade no cardápio</li>
           <li>Ampla expertise no segmento de alimentação</li>
           <li>Software operacional e gerencial</li>
-          <li>Metodologia de trabal ho padronizada</li>
-          <li>Apoio para a escolha do ponto comercia</li>
+          <li>Metodologia de trabalho padronizada</li>
+          <li>Apoio para a escolha do ponto comercial</li>
           <li>
             Capacitação contínua para o Franqueado e sua equipe de funcionários
           </li>
@@ -209,23 +213,23 @@ export default function Home() {
           <img
             src="/local3.jpeg"
             alt=""
-            className="rounded-xl md:w-1/2 lg:w-72"
+            className="rounded-xl md:w-1/2 lg:w-[330px]"
           />
           <img
             src="/local5.jpeg"
             alt=""
-            className="rounded-xl hidden md:block md:w-1/2 lg:w-72"
+            className="rounded-xl hidden md:block md:w-1/2 lg:w-[330px]"
           />
           <img
             src="/local4.jpeg"
             alt=""
-            className="rounded-xl hidden lg:block lg:w-72"
+            className="rounded-xl hidden lg:block lg:w-[330px]"
           />
         </div>
 
         <Link
           href="/franquia"
-          className="flex w-fit mx-auto bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl md:hidden hover:bg-secondaryHover hover:scale-105 duration-75"
+          className="flex justify-center bg-secondary text-white text-lg font-bold px-8 py-5 mt-6 rounded-xl hover:bg-secondaryHover hover:scale-[1.02] duration-75 max-w-[1024px]"
         >
           Quero começar a faturar
         </Link>
