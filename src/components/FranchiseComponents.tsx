@@ -5,7 +5,10 @@ import { IoAccessibility, IoDesktop, IoStar } from "react-icons/io5";
 export function StartPlanCard() {
   return (
     <Link
-      href={"/contato"}
+      href={
+        "https://wa.me/5517981733913?text=Olá, gostaria de implantar uma nova franquia Bitis Food Pizza utilizando o Investimento Start!"
+      }
+      target="_blank"
       className="flex justify-center desktop:hover:scale-105 duration-300"
     >
       <div className="bg-primary m-4 mt-8 desktop:mt-12 w-[400px] flex flex-col justify-center items-center rounded-2xl">
@@ -33,7 +36,10 @@ export function StartPlanCard() {
 export function FullPlanCard() {
   return (
     <Link
-      href={"/contato"}
+      href={
+        "https://wa.me/5517981733913?text=Olá, gostaria de implantar uma nova franquia Bitis Food Pizza utilizando o Investimento Full!"
+      }
+      target="_blank"
       className="flex justify-center desktop:hover:scale-105 duration-300"
     >
       <div className="bg-secondary m-4 mt-12 w-[400px] flex flex-col justify-center items-center rounded-2xl">
