@@ -31,7 +31,7 @@ export default function Home() {
       setSliderCountXl((sliderCountXl) =>
         sliderCountXl === slider.length - 5 ? 0 : sliderCountXl + 1
       );
-    }, 4000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -95,6 +95,8 @@ export default function Home() {
               </p>
             </Link>
           </div>
+
+          {/* mobile */}
           <div className={`flex overflow-x-hidden md:hidden`}>
             {slider.map((item) => (
               <div
@@ -104,12 +106,9 @@ export default function Home() {
                   transform: `translateX(-${100 * sliderCountSm}%)`,
                 }}
               >
-                <div className="mx-auto max-w-[304px] space-y-0">
-                  <img
-                    src={item.img}
-                    className="rounded-full -mt-10 md:w-[400px]"
-                  />
-                  <p className="text-2xl font-light -mt-10 text-center">
+                <div className="mx-auto max-w-[304px]">
+                  <img src={item.img} />
+                  <p className="text-2xl font-light text-center">
                     {item.description}
                   </p>
                 </div>
@@ -117,6 +116,7 @@ export default function Home() {
             ))}
           </div>
 
+          {/* tablet */}
           <div className={`md:flex overflow-x-hidden hidden lg:hidden`}>
             {slider.map((item) => (
               <div
@@ -127,10 +127,7 @@ export default function Home() {
                 }}
               >
                 <div className="mx-auto max-w-[304px] space-y-0">
-                  <img
-                    src={item.img}
-                    className="rounded-full -mt-10 md:w-[400px]"
-                  />
+                  <img src={item.img} />
                   <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
@@ -139,6 +136,7 @@ export default function Home() {
             ))}
           </div>
 
+          {/* desktop */}
           <div className={`lg:flex overflow-x-hidden hidden xl:hidden`}>
             {slider.map((item) => (
               <div
@@ -149,10 +147,7 @@ export default function Home() {
                 }}
               >
                 <div className="mx-auto max-w-[304px] space-y-0">
-                  <img
-                    src={item.img}
-                    className="rounded-full -mt-10 md:w-[400px]"
-                  />
+                  <img src={item.img} />
                   <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
@@ -161,6 +156,7 @@ export default function Home() {
             ))}
           </div>
 
+          {/* desktop xl */}
           <div className={`xl:flex overflow-x-hidden hidden`}>
             {slider.map((item) => (
               <div
@@ -171,10 +167,7 @@ export default function Home() {
                 }}
               >
                 <div className="mx-auto max-w-[304px] space-y-0">
-                  <img
-                    src={item.img}
-                    className="rounded-full -mt-10 md:w-[400px]"
-                  />
+                  <img src={item.img} />
                   <p className="text-2xl font-light -mt-10 text-center">
                     {item.description}
                   </p>
