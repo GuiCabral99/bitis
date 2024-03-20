@@ -7,7 +7,7 @@ export default () => {
       id: 0,
       img: "/burger.png",
       alt: "Hamburger",
-      name: "Burgers",
+      name: "Burguers",
       description:
         "Saboreie nosso hambúrguer clássico, um verdadeiro deleite para os amantes de comida rápida. Suculento e saboroso, é a escolha perfeita para quem busca uma refeição reconfortante e satisfatória.",
     },

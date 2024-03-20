@@ -10,7 +10,7 @@ export default function Home() {
   const [sliderCountLg, setSliderCountLg] = useState<number>(0);
   const [sliderCountXl, setSliderCountXl] = useState<number>(0);
   const slider = [
-    { id: 0, img: "/burger.png", description: "Burgers" },
+    { id: 0, img: "/burger.png", description: "Burguers" },
     { id: 1, img: "/pizza.png", description: "Pizzas" },
     { id: 2, img: "/batata.png", description: "Porções Quentes" },
     { id: 3, img: "/espeto.png", description: "Espetos" },
