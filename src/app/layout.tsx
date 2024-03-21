@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -16,6 +13,25 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Bitis Food Pizza",
   description: "É faca na celola!",
+  keywords: [
+    "Bitis",
+    "Food",
+    "Pizza",
+    "celola",
+    "franquia",
+    "Bitis Food Pizza",
+    "comida",
+    "restaurante",
+    "pizzaria",
+    "lanchonete",
+    "pizza",
+    "burger",
+    "lanche",
+    "espeto",
+    "caldo",
+    "porção",
+    "jantinha",
+  ],
 };
 
 export default function RootLayout({
