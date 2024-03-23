@@ -11,18 +11,6 @@ import Sidebar from "./Sidebar";
 export default () => {
   const [tappedSidebar, setTappedSidebar] = useState<boolean>(false);
 
-  const copyToClipboard = () => {
-    const textField = document.createElement("textarea");
-    textField.innerText = "contato@bitisfoodpizza.com.br";
-    document.body.appendChild(textField);
-    textField.select();
-    document.execCommand("copy");
-    textField.remove();
-
-    alert(
-      "Email copiado para a área de transferência:\ncontato@bitisfoodpizza.com.br"
-    );
-  };
   return (
     <>
       <Sidebar isOpen={tappedSidebar} setIsOpen={setTappedSidebar} />
