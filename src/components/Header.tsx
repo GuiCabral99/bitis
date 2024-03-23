@@ -10,6 +10,19 @@ import Sidebar from "./Sidebar";
 
 export default () => {
   const [tappedSidebar, setTappedSidebar] = useState<boolean>(false);
+
+  const copyToClipboard = () => {
+    const textField = document.createElement("textarea");
+    textField.innerText = "contato@bitisfoodpizza.com.br";
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+
+    alert(
+      "Email copiado para a área de transferência:\ncontato@bitisfoodpizza.com.br"
+    );
+  };
   return (
     <>
       <Sidebar isOpen={tappedSidebar} setIsOpen={setTappedSidebar} />
@@ -33,7 +46,7 @@ export default () => {
         </div>
         <Link href={"/"}>
           <div className="pt-10 desktop:pt-16 justify-center items-center duration-75 hover:scale-110">
-            <img src="logo.svg" className="w-24 desktop:w-28" />
+            <img src="/logo.svg" className="w-24 desktop:w-28" />
           </div>
         </Link>
         <div className="hidden flex-1 desktop:flex justify-end items-center space-x-8">
