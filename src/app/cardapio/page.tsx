@@ -63,7 +63,7 @@ export default () => {
       <section className="px-mobile space-y-4 md:space-y-8 lg:space-y-16 max-w-[1024px] mx-auto">
         <h1 className="md:text-3xl">Os mais pedidos do iFood!</h1>
         <h3 className="md:text-2xl font-body font-normal">
-          Burgers e pizza estão entre os top 10 mais vendidos do iFood
+          Burguers e pizzas estão entre os top 10 mais vendidos do iFood
         </h3>
         <h4 className="text-end text-sm font-light md:text-xl font-body">
           8,5 mil burguers por hora!

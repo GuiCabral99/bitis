@@ -68,7 +68,7 @@ export default () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://bitisfoodpizza.com.br/contato/thanks"
+                value="https://bitisfoodpizza.com.br/contato/agradecimento"
                 className="hidden"
               ></input>
               <div className="flex flex-col space-y-2">
