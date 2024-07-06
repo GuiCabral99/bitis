@@ -43,14 +43,12 @@ export default function Home() {
             <h1 className="md:text-3xl desktop:text-4xl desktop:max-w-[400px] max-w-[340px]">
               Fature até 800 mil ao ano!
             </h1>
-            <p className="text-lg font-light md:text-2xl">
-              Comece sua franquia agora
-            </p>
+            <p className="text-lg md:text-2xl">Comece sua franquia agora</p>
             <Link
               href="/franquia"
               className="inline-block bg-primary2 text-black text-sm font-bold px-6 py-2 mt-6 rounded-xl md:text-xl md:px-8 md:py-4 font-body hover:bg-primary hover:scale-105 duration-75"
             >
-              Quero faturar
+              Quero minha franquia
             </Link>
           </div>
         </div>
