@@ -41,6 +41,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta
+          name="facebook-domain-verification"
+          content="1mhc0pfevhs9o3tan46l1kqzb6y9tv"
+        />
+      </head>
       <body className={poppins.className}>
         <Header />
         {children}
